@@ -1,0 +1,28 @@
+{
+
+    "extra": {
+        "installer-paths": {
+            "modules/{$name}/": ["type:bitrix-module"]
+        },
+        "merge-plugin": {
+            "require": [
+                "../bitrix/composer-bx.json"
+            ]
+        }
+    },
+
+    "autoload": {
+        "psr-4": {
+            "RKDigital\\": "core/"
+        }
+    },
+
+    "config": {
+        "vendor-dir": "./vendor"
+    },
+
+    "require": {
+        "andreyryabin/sprint.migration": "^3.23",
+        "wikimedia/composer-merge-plugin": "1.4.1"
+    }
+}

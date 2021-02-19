@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/bitrix/templates/cloudy_blue/blog.css" => "16121832008956","/bitrix/templates/cloudy_blue/common.css" => "16121832003299","/bitrix/templates/cloudy_blue/styles.css" => "1612183200807","/bitrix/templates/cloudy_blue/template_styles.css" => "16121832008244",]; ?>
