@@ -1,6 +1,6 @@
 <?php
 $arUrlRewrite=array (
-  10 => 
+  10 =>
   array (
     'CONDITION' => '#^/test/([0-9a-zA-Z-]+?)/#',
     'RULE' => 'news=$1',
@@ -16,7 +16,7 @@ $arUrlRewrite=array (
     'PATH' => '/news/index.php',
     'SORT' => 100,
   ),
-  11 => 
+  11 =>
   array (
     'CONDITION' => '#^/test/#',
     'RULE' => '',

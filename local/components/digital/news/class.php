@@ -16,6 +16,7 @@ class NewsListDigital extends CBitrixComponent
 {
     private $_request;
 
+
     /**
      * @throws LoaderException
      */
@@ -39,7 +40,7 @@ class NewsListDigital extends CBitrixComponent
         if ($this->startResultCache(false, $this->_request["news"])) {
 
             $this->checkModules();
-            
+
             $entity = Factory::getEntity($this->arParams["IBLOCK_ID"]);
 
             if (!$this->_request["news"]) {

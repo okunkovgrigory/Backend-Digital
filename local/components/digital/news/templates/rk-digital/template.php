@@ -10,7 +10,7 @@
             <h3><?= $arItem["NAME"] ?></h3>
             <p><?= $arItem["PREVIEW_TEXT"] ?></p>
             <div class="date"><?=$arItem['ACTIVE_FROM']?></div>
-            <a href="/test/<?=$arItem["CODE"]?>/">Подробнее</a>
+            <a href="<?$arItem["BACK_URL"]?><?=$arItem["CODE"]?>/">Подробнее</a>
         </div>
         <?php endforeach; ?>
         <div class="clearfix"></div>

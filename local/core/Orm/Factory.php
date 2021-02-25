@@ -1,10 +1,11 @@
 <?php
 
-
 namespace RKDigital\Orm;
 
+use Bitrix\Main\Application;
 use CComponentEngine;
 use CIBlock;
+use CModule;
 
 /**
  * Class Factory
@@ -34,7 +35,7 @@ final class Factory
      * @param array $arParams
      * @return string
      */
-    public static function includeSefMode(array $arParams): string
+    public static function includeSefMode(array &$arParams): string
     {
         $arDefaultUrlTemplates404 = [
             "detail" => "#ELEMENT_CODE#/"
@@ -66,11 +67,6 @@ final class Factory
             $arUrlTemplates,
             $arVariables
         );
-
-
-        if (!$componentPage) {
-            $componentPage = '';
-        }
 
         CComponentEngine::initComponentVariables(
             $componentPage,
